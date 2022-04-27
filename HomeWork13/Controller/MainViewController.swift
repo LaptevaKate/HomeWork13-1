@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
 //MARK: - UICollectionViewDelegate, UICollectionViewDataSource
