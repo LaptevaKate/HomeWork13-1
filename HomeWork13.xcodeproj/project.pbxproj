@@ -20,9 +20,13 @@
 		5EBBEDE72815531C00621845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBBEDE52815531C00621845 /* LaunchScreen.storyboard */; };
 		5EBBEDF12815600100621845 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBEDF02815600100621845 /* ImageCell.swift */; };
 		5EBBEDF32815C65600621845 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBEDF22815C65600621845 /* MainViewController.swift */; };
+		5EC37CE0281AC457007AAC79 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC37CDF281AC457007AAC79 /* Alamofire */; };
+		A1FB31255CC6B98D5AB02389 /* Pods_HomeWork13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3713D216ACB3EC2885C390A8 /* Pods_HomeWork13.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		191FF66A283D34EEE18E7852 /* Pods-HomeWork13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork13.debug.xcconfig"; path = "Target Support Files/Pods-HomeWork13/Pods-HomeWork13.debug.xcconfig"; sourceTree = "<group>"; };
+		3713D216ACB3EC2885C390A8 /* Pods_HomeWork13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWork13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E109C7F2818687300F92B06 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5E109C812818688400F92B06 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5E109C8528186B1400F92B06 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 		5EBBEDE82815531C00621845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EBBEDF02815600100621845 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		5EBBEDF22815C65600621845 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9B6BA22CBB60A712A126FCB2 /* Pods-HomeWork13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork13.release.xcconfig"; path = "Target Support Files/Pods-HomeWork13/Pods-HomeWork13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +50,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FB31255CC6B98D5AB02389 /* Pods_HomeWork13.framework in Frameworks */,
+				5EC37CE0281AC457007AAC79 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290F5521338D85AA0C8AB3D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191FF66A283D34EEE18E7852 /* Pods-HomeWork13.debug.xcconfig */,
+				9B6BA22CBB60A712A126FCB2 /* Pods-HomeWork13.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5E109C90281954B300F92B06 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +120,8 @@
 			children = (
 				5EBBEDD92815531B00621845 /* HomeWork13 */,
 				5EBBEDD82815531B00621845 /* Products */,
+				290F5521338D85AA0C8AB3D9 /* Pods */,
+				B70540B388FB5FE3372DD2E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +146,14 @@
 			path = HomeWork13;
 			sourceTree = "<group>";
 		};
+		B70540B388FB5FE3372DD2E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3713D216ACB3EC2885C390A8 /* Pods_HomeWork13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,15 +161,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBBEDEB2815531C00621845 /* Build configuration list for PBXNativeTarget "HomeWork13" */;
 			buildPhases = (
+				839DCEDB73A383BA7010E90F /* [CP] Check Pods Manifest.lock */,
 				5EBBEDD32815531B00621845 /* Sources */,
 				5EBBEDD42815531B00621845 /* Frameworks */,
 				5EBBEDD52815531B00621845 /* Resources */,
+				1F63B9D0FCE3A77B9E9CEDC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HomeWork13;
+			packageProductDependencies = (
+				5EC37CDF281AC457007AAC79 /* Alamofire */,
+			);
 			productName = HomeWork13;
 			productReference = 5EBBEDD72815531B00621845 /* HomeWork13.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 5EBBEDCE2815531B00621845;
+			packageReferences = (
+				5EC37CDE281AC457007AAC79 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+			);
 			productRefGroup = 5EBBEDD82815531B00621845 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +227,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F63B9D0FCE3A77B9E9CEDC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork13/Pods-HomeWork13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork13/Pods-HomeWork13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWork13/Pods-HomeWork13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		839DCEDB73A383BA7010E90F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWork13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EBBEDD32815531B00621845 /* Sources */ = {
@@ -350,6 +426,7 @@
 		};
 		5EBBEDEC2815531C00621845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191FF66A283D34EEE18E7852 /* Pods-HomeWork13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +455,7 @@
 		};
 		5EBBEDED2815531C00621845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6BA22CBB60A712A126FCB2 /* Pods-HomeWork13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +504,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EC37CDE281AC457007AAC79 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EC37CDF281AC457007AAC79 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EC37CDE281AC457007AAC79 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EBBEDCF2815531B00621845 /* Project object */;
 }

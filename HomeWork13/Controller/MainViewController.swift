@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     
     //MARK: - @IBOutlet
@@ -21,6 +22,7 @@ class MainViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         navigationController?.setNavigationBarHidden(true, animated: false)
+      
     }
 }
 //MARK: - UICollectionViewDelegate, UICollectionViewDataSource
